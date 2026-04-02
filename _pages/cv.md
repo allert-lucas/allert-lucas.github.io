@@ -1,27 +1,16 @@
 ---
-layout: archive
+layout: cv-layout
 title: "CV"
 permalink: /cv/
-author_profile: true
 redirect_from:
   - /resume
 ---
 
 {% include base_path %}
 
-Education
-======
-* Applied Informatics, Ghent (in progress)
+{% include cv-template.html %}
 
-Skills
-======
-* Programming Languages
-  * (Add your languages here)
-* Frameworks & Tools
-  * (Add your tools here)
-* Other Skills
-  * (Add other skills here)
-
-Projects
-======
-Check out my [Portfolio](/portfolio/) for a list of projects.
+<div class="cv-download-links">
+  <a href="{{ base_path }}/portfolio/" class="btn btn--primary">View Portfolio</a>
+  <a href="{{ base_path }}/" class="btn btn--inverse">Back to Home</a>
+</div>

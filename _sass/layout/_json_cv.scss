@@ -6,7 +6,7 @@
 .cv-container {
   max-width: 1000px;
   margin: 0 auto;
-  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--global-font-family, inherit);
   color: var(--global-text-color);
   line-height: 1.6;
 }
@@ -14,15 +14,16 @@
 /* Header Styles */
 .cv-header {
   margin-bottom: 2rem;
-  border-bottom: 2px solid var(--global-thead-color );
+  border-bottom: 2px solid var(--global-thead-color);
   padding-bottom: 1rem;
 }
 
 .cv-header h1 {
   margin-bottom: 0.5rem;
-  color: var(--global-text-color );
+  color: var(--global-text-color);
 }
 
+.cv-contact,
 .cv-contact-info {
   display: flex;
   flex-wrap: wrap;
@@ -40,20 +41,22 @@
   display: flex;
   gap: 1rem;
   margin-top: 0.5rem;
+  flex-wrap: wrap;
 }
 
-.cv-profile-item {
+.cv-profile-item,
+.cv-profile-link {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.cv-profile-item a {
+.cv-profile-link {
   color: var(--global-link-color);
   text-decoration: none;
 }
 
-.cv-profile-item a:hover {
+.cv-profile-link:hover {
   text-decoration: underline;
 }
 
@@ -110,15 +113,22 @@
   margin-bottom: 0.5rem;
 }
 
+.cv-item-detail {
+  margin-bottom: 0.35rem;
+}
+
+.cv-highlights,
 .cv-item-highlights {
   margin-top: 0.5rem;
   padding-left: 1.5rem;
 }
 
+.cv-highlights li,
 .cv-item-highlights li {
   margin-bottom: 0.25rem;
 }
 
+.cv-skill-list,
 .cv-item-courses li {
   margin-bottom: 0.25rem;
 }
@@ -135,17 +145,25 @@
   color: var(--global-text-color);
 }
 
-.cv-skill-keywords {
+.cv-skill-keywords,
+.cv-skill-list {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
 
-.cv-skill-keyword {
+.cv-skill-keyword,
+.cv-skill-list li {
   background-color: var(--global-bg-color);
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
   font-size: 0.9rem;
+}
+
+.cv-skill-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 /* Project Styles */
@@ -221,15 +239,15 @@
   .cv-container {
     max-width: 100%;
   }
-  
+
   .cv-header {
     border-bottom-color: var(--global-border-color);
   }
-  
+
   .cv-section h2 {
     border-bottom-color: var(--global-border-color);
   }
-  
+
   .cv-skill-keyword,
   .cv-project-keyword,
   .cv-interest-keyword {

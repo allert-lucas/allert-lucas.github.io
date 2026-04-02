@@ -1,10 +1,11 @@
 {
   "basics": {
     "name": "Lucas Allert",
+    "label": "Applied Informatics Student",
     "email": "allert.lucas@gmail.com",
     "phone": "",
     "website": "https://allert-lucas.github.io",
-    "summary": "Applied Informatics Student based in Ghent, Belgium",
+    "summary": "Applied Informatics student based in Ghent, Belgium.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -25,19 +26,64 @@
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "company": "Scouts Brakel-Lierde",
+      "position": "CMS Support",
+      "startDate": "2023",
+      "endDate": "Present",
+      "summary": "Helped maintain the organization's website using WordPress and learned practical website best practices.",
+      "highlights": [
+        "Supported content management tasks for the website.",
+        "Gained hands-on experience with WordPress and maintaining a good user experience."
+      ]
+    }
+  ],
   "education": [
     {
       "institution": "Ghent",
       "area": "Applied Informatics",
       "studyType": "",
-      "startDate": "",
+      "startDate": "2024",
       "endDate": "Present",
+      "gpa": null,
+      "courses": []
+    },
+    {
+      "institution": "Ghent",
+      "area": "Bio-engineering",
+      "studyType": "",
+      "startDate": "2021",
+      "endDate": "2023",
       "gpa": null,
       "courses": []
     }
   ],
-  "skills": [],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "keywords": [
+        "Python",
+        "JavaScript",
+        "Java"
+      ]
+    },
+    {
+      "name": "Frameworks & Tools",
+      "keywords": [
+        "Docker",
+        "MySQL"
+      ]
+    },
+    {
+      "name": "Other Skills",
+      "keywords": [
+        "Forest Mensuration",
+        "Ecology",
+        "Machine Learning"
+      ]
+    }
+  ],
   "languages": [],
   "interests": [],
   "references": [],

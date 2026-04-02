@@ -1,22 +1,22 @@
 ---
 permalink: /
-title: "Welcome to my portfolio"
+title: "Lucas Allert"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
 Hi, I'm Lucas Allert, an Applied Informatics student based in Ghent, Belgium.
 
-About Me
-======
-I'm passionate about technology and software development. This website serves as my personal portfolio where I showcase my projects and share my journey in the field of applied informatics.
+# About Me
 
-What You'll Find Here
-======
-- **Portfolio**: A collection of my projects and work
-- **Blog Posts**: My thoughts and experiences in tech
-- **CV**: My professional background and skills
+I focus on practical software, data, and technical problem-solving. This site brings together my CV, selected projects, and occasional writing in one place.
 
-Feel free to explore and connect with me through my social links!
+# Current Focus
+
+- Applied Informatics coursework and projects
+- Software development and automation
+- Practical technical skills and academic work
+
+Start with the [CV](/cv/) if you want a quick overview, or browse the [Portfolio](/portfolio/) for project work.
