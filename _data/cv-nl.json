@@ -1,0 +1,94 @@
+{
+  "basics": {
+    "name": "Lucas Allert",
+    "label": "Student Toegepaste Informatica",
+    "email": "allert.lucas@gmail.com",
+    "phone": "",
+    "website": "https://allert-lucas.github.io",
+    "summary": "Student Toegepaste Informatica in Gent, België.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Gent",
+      "countryCode": "BE",
+      "region": ""
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "allert-lucas",
+        "url": "https://github.com/allert-lucas"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "Lucas Allert",
+        "url": "https://linkedin.com/in/lucas-allert"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Scouts Brakel-Lierde",
+      "position": "CMS Ondersteuning",
+      "startDate": "2023",
+      "endDate": "Heden",
+      "summary": "Hielp bij het onderhouden van de website van de organisatie met WordPress en leerde praktische best practices voor websites.",
+      "highlights": [
+        "Ondersteunde contentbeheertaken voor de website.",
+        "Deed praktische ervaring op met WordPress en het onderhouden van een goede gebruikerservaring."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Gent",
+      "area": "Toegepaste Informatica",
+      "studyType": "",
+      "startDate": "2024",
+      "endDate": "Heden",
+      "gpa": null,
+      "courses": []
+    },
+    {
+      "institution": "Gent",
+      "area": "Bio-ingenieurswetenschappen",
+      "studyType": "",
+      "startDate": "2021",
+      "endDate": "2023",
+      "gpa": null,
+      "courses": []
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programmeertalen",
+      "keywords": [
+        "Python",
+        "JavaScript",
+        "Java"
+      ]
+    },
+    {
+      "name": "Frameworks & Tools",
+      "keywords": [
+        "Docker",
+        "MySQL"
+      ]
+    },
+    {
+      "name": "Andere vaardigheden",
+      "keywords": [
+        "Bosmeting",
+        "Ecologie",
+        "Machine Learning"
+      ]
+    }
+  ],
+  "languages": [],
+  "interests": [],
+  "references": [],
+  "publications": [],
+  "presentations": [],
+  "teaching": [],
+  "portfolio": []
+}

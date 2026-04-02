@@ -7,8 +7,9 @@ author_profile: true
 
 {% include base_path %}
 
+<h2 class="lang-en">My Projects</h2>
+<h2 class="lang-nl" style="display:none;">Mijn Projecten</h2>
 
 {% for post in site.portfolio %}
-  {% include archive-single.html %}
+{% include archive-single.html %}
 {% endfor %}
-

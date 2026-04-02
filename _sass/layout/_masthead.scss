@@ -10,9 +10,9 @@
   width: 100%;
 
   -webkit-animation: intro 0.3s both;
-          animation: intro 0.3s both;
+  animation: intro 0.3s both;
   -webkit-animation-delay: 0.15s;
-          animation-delay: 0.15s;
+  animation-delay: 0.15s;
   z-index: 20;
 
   &::after {
@@ -45,7 +45,6 @@
 }
 
 .masthead__menu {
-
   ul {
     margin: 0;
     padding: 0;
@@ -78,4 +77,21 @@
   color: var(--global-text-color);
   border-bottom: 2px solid var(--global-text-color);
   /* No need to repeat pointer-events and cursor here */
+}
+
+/* Language toggle button */
+#language-toggle {
+  .language-toggle-text {
+    font-weight: 600;
+    font-size: 0.85em;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    background: var(--global-border-color);
+    cursor: pointer;
+
+    &:hover {
+      background: var(--global-text-color);
+      color: var(--global-bg-color);
+    }
+  }
 }
