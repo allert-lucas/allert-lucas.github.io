@@ -1,0 +1,83 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "posts"
+    label: "Blog Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Publish Date",
+          name: "date",
+          widget: "datetime",
+          format: "YYYY-MM-DD",
+        }
+      - {
+          label: "Permalink",
+          name: "permalink",
+          widget: "string",
+          required: false,
+        }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "notes"
+    label: "Daily Notes (Private)"
+    folder: "_notes"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Date",
+          name: "date",
+          widget: "datetime",
+          format: "YYYY-MM-DD",
+        }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - {
+          label: "Published",
+          name: "published",
+          widget: "boolean",
+          default: false,
+          hint: "Set to true to make visible on public site",
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "portfolio"
+    label: "Portfolio"
+    folder: "_portfolio"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Excerpt", name: "excerpt", widget: "text", required: false }
+      - {
+          label: "Header Image",
+          name: "header",
+          widget: "object",
+          required: false,
+          fields:
+            [
+              {
+                label: "Image",
+                name: "image",
+                widget: "image",
+                required: false,
+              },
+              {
+                label: "Teaser",
+                name: "teaser",
+                widget: "image",
+                required: false,
+              },
+            ],
+        }
+      - { label: "Body", name: "body", widget: "markdown" }

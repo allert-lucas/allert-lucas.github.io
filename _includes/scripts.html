@@ -2,3 +2,16 @@
 <script src="{{ base_path }}/assets/js/language.js"></script>
 
 {% include analytics.html %}
+
+<!-- Netlify Identity redirect after login -->
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>

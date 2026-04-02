@@ -224,6 +224,9 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  notes:
+    output: true
+    permalink: /:collection/:path/
 
 # These settings control how pages and collections are included in the site
 defaults:
@@ -280,6 +283,16 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+  # _notes (private daily learning notes - published: false by default)
+  - scope:
+      path: ""
+      type: notes
+    values:
+      layout: single
+      author_profile: true
+      share: false
+      comments: false
+      published: false
 
 # Sass/SCSS
 sass:

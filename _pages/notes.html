@@ -1,0 +1,21 @@
+---
+layout: archive
+permalink: /notes/
+title: "Daily Learning Notes"
+author_profile: true
+published: false
+---
+
+{% include base_path %}
+
+<p><em>These notes are only visible when running locally with <code>--unpublished</code> flag.</em></p>
+
+{% capture written_year %}'None'{% endcapture %}
+{% for note in site.notes reversed %}
+{% capture year %}{{ note.date | date: '%Y' }}{% endcapture %}
+{% if year != written_year %}
+<h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
+{% capture written_year %}{{ year }}{% endcapture %}
+{% endif %}
+{% include archive-single.html type="grid" %}
+{% endfor %}
